@@ -1,0 +1,210 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		324EBFA21E5353F800C73996 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324EBFA11E5353F800C73996 /* main.cpp */; };
+		324EBFA41E5353F800C73996 /* Void_Life.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 324EBFA31E5353F800C73996 /* Void_Life.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		324EBF9B1E5353F800C73996 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				324EBFA41E5353F800C73996 /* Void_Life.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		324EBF9D1E5353F800C73996 /* Void Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Void Life"; sourceTree = BUILT_PRODUCTS_DIR; };
+		324EBFA11E5353F800C73996 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		324EBFA31E5353F800C73996 /* Void_Life.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Void_Life.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		324EBF9A1E5353F800C73996 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		324EBF921E5353F700C73996 = {
+			isa = PBXGroup;
+			children = (
+				324EBFA01E5353F800C73996 /* Void Life */,
+				324EBF9E1E5353F800C73996 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		324EBF9E1E5353F800C73996 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				324EBF9D1E5353F800C73996 /* Void Life */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		324EBFA01E5353F800C73996 /* Void Life */ = {
+			isa = PBXGroup;
+			children = (
+				324EBFA11E5353F800C73996 /* main.cpp */,
+				324EBFA31E5353F800C73996 /* Void_Life.1 */,
+			);
+			path = "Void Life";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		324EBF9C1E5353F800C73996 /* Void Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 324EBFA71E5353F800C73996 /* Build configuration list for PBXNativeTarget "Void Life" */;
+			buildPhases = (
+				324EBF991E5353F800C73996 /* Sources */,
+				324EBF9A1E5353F800C73996 /* Frameworks */,
+				324EBF9B1E5353F800C73996 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Void Life";
+			productName = "Void Life";
+			productReference = 324EBF9D1E5353F800C73996 /* Void Life */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		324EBF941E5353F700C73996 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 324EBF971E5353F700C73996 /* Build configuration list for PBXProject "Void Life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 324EBF921E5353F700C73996;
+			productRefGroup = 324EBF9E1E5353F800C73996 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				324EBF9C1E5353F800C73996 /* Void Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		324EBF991E5353F800C73996 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				324EBFA21E5353F800C73996 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		324EBFA51E5353F800C73996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		324EBFA61E5353F800C73996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		324EBFA81E5353F800C73996 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		324EBFA91E5353F800C73996 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		324EBF971E5353F700C73996 /* Build configuration list for PBXProject "Void Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324EBFA51E5353F800C73996 /* Debug */,
+				324EBFA61E5353F800C73996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		324EBFA71E5353F800C73996 /* Build configuration list for PBXNativeTarget "Void Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				324EBFA81E5353F800C73996 /* Debug */,
+				324EBFA91E5353F800C73996 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 324EBF941E5353F700C73996 /* Project object */;
+}
