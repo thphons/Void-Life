@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		322641A81E5359D800EC71CB /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 322641A71E5359D800EC71CB /* libglfw.dylib */; };
+		322641AB1E5359E100EC71CB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322641AA1E5359E100EC71CB /* OpenGL.framework */; };
 		324EBFA21E5353F800C73996 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324EBFA11E5353F800C73996 /* main.cpp */; };
 		324EBFA41E5353F800C73996 /* Void_Life.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 324EBFA31E5353F800C73996 /* Void_Life.1 */; };
 /* End PBXBuildFile section */
@@ -25,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		322641A71E5359D800EC71CB /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = ../../../../../usr/local/lib/libglfw.dylib; sourceTree = "<group>"; };
+		322641AA1E5359E100EC71CB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
 		324EBF9D1E5353F800C73996 /* Void Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Void Life"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EBFA11E5353F800C73996 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		324EBFA31E5353F800C73996 /* Void_Life.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Void_Life.1; sourceTree = "<group>"; };
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322641AB1E5359E100EC71CB /* OpenGL.framework in Frameworks */,
+				322641A81E5359D800EC71CB /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		324EBF921E5353F700C73996 = {
 			isa = PBXGroup;
 			children = (
+				322641AA1E5359E100EC71CB /* OpenGL.framework */,
+				322641A71E5359D800EC71CB /* libglfw.dylib */,
 				324EBFA01E5353F800C73996 /* Void Life */,
 				324EBF9E1E5353F800C73996 /* Products */,
 			);
@@ -146,7 +154,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Debug;
 		};
@@ -166,7 +174,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				SDKROOT = macosx;
+				SDKROOT = "";
 			};
 			name = Release;
 		};
@@ -203,6 +211,7 @@
 				324EBFA91E5353F800C73996 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
