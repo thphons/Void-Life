@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		322641A81E5359D800EC71CB /* libglfw.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 322641A71E5359D800EC71CB /* libglfw.dylib */; };
 		322641AB1E5359E100EC71CB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322641AA1E5359E100EC71CB /* OpenGL.framework */; };
+		322641AD1E535B2A00EC71CB /* libglfw.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 322641AC1E535B2A00EC71CB /* libglfw.3.dylib */; };
+		322641AF1E53633F00EC71CB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322641AE1E53633F00EC71CB /* GLUT.framework */; };
 		324EBFA21E5353F800C73996 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 324EBFA11E5353F800C73996 /* main.cpp */; };
 		324EBFA41E5353F800C73996 /* Void_Life.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 324EBFA31E5353F800C73996 /* Void_Life.1 */; };
+		326A2BDE1E5385FA00AAE3D4 /* Camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326A2BDD1E5385FA00AAE3D4 /* Camera.cpp */; };
+		326A2BE31E538DE400AAE3D4 /* GLWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326A2BE21E538DE400AAE3D4 /* GLWindow.cpp */; };
+		326A2BE81E53902000AAE3D4 /* GLControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 326A2BE71E53902000AAE3D4 /* GLControl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,11 +31,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		322641A71E5359D800EC71CB /* libglfw.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.dylib; path = ../../../../../usr/local/lib/libglfw.dylib; sourceTree = "<group>"; };
 		322641AA1E5359E100EC71CB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		322641AC1E535B2A00EC71CB /* libglfw.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.dylib; path = ../../../../../usr/local/lib/libglfw.3.dylib; sourceTree = "<group>"; };
+		322641AE1E53633F00EC71CB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../System/Library/Frameworks/GLUT.framework; sourceTree = "<group>"; };
 		324EBF9D1E5353F800C73996 /* Void Life */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Void Life"; sourceTree = BUILT_PRODUCTS_DIR; };
 		324EBFA11E5353F800C73996 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		324EBFA31E5353F800C73996 /* Void_Life.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Void_Life.1; sourceTree = "<group>"; };
+		326A2BDB1E5385EC00AAE3D4 /* Camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Camera.h; sourceTree = "<group>"; };
+		326A2BDD1E5385FA00AAE3D4 /* Camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Camera.cpp; sourceTree = "<group>"; };
+		326A2BDF1E5387A500AAE3D4 /* libglut.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglut.dylib; path = ../../../../../usr/local/lib/libglut.dylib; sourceTree = "<group>"; };
+		326A2BE11E538DD700AAE3D4 /* GLWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLWindow.h; sourceTree = "<group>"; };
+		326A2BE21E538DE400AAE3D4 /* GLWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLWindow.cpp; sourceTree = "<group>"; };
+		326A2BE41E53900500AAE3D4 /* GLControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLControl.h; sourceTree = "<group>"; };
+		326A2BE71E53902000AAE3D4 /* GLControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GLControl.cpp; path = ../GLControl.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,8 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322641AF1E53633F00EC71CB /* GLUT.framework in Frameworks */,
+				322641AD1E535B2A00EC71CB /* libglfw.3.dylib in Frameworks */,
 				322641AB1E5359E100EC71CB /* OpenGL.framework in Frameworks */,
-				322641A81E5359D800EC71CB /* libglfw.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,8 +63,10 @@
 		324EBF921E5353F700C73996 = {
 			isa = PBXGroup;
 			children = (
+				326A2BDF1E5387A500AAE3D4 /* libglut.dylib */,
+				322641AE1E53633F00EC71CB /* GLUT.framework */,
+				322641AC1E535B2A00EC71CB /* libglfw.3.dylib */,
 				322641AA1E5359E100EC71CB /* OpenGL.framework */,
-				322641A71E5359D800EC71CB /* libglfw.dylib */,
 				324EBFA01E5353F800C73996 /* Void Life */,
 				324EBF9E1E5353F800C73996 /* Products */,
 			);
@@ -68,6 +83,12 @@
 		324EBFA01E5353F800C73996 /* Void Life */ = {
 			isa = PBXGroup;
 			children = (
+				326A2BE41E53900500AAE3D4 /* GLControl.h */,
+				326A2BE71E53902000AAE3D4 /* GLControl.cpp */,
+				326A2BE11E538DD700AAE3D4 /* GLWindow.h */,
+				326A2BE21E538DE400AAE3D4 /* GLWindow.cpp */,
+				326A2BDB1E5385EC00AAE3D4 /* Camera.h */,
+				326A2BDD1E5385FA00AAE3D4 /* Camera.cpp */,
 				324EBFA11E5353F800C73996 /* main.cpp */,
 				324EBFA31E5353F800C73996 /* Void_Life.1 */,
 			);
@@ -125,6 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				324EBFA21E5353F800C73996 /* main.cpp in Sources */,
+				326A2BDE1E5385FA00AAE3D4 /* Camera.cpp in Sources */,
+				326A2BE31E538DE400AAE3D4 /* GLWindow.cpp in Sources */,
+				326A2BE81E53902000AAE3D4 /* GLControl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

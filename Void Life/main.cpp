@@ -8,11 +8,12 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[])
-{
+#include "GLControl.h"
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+int main(int argc, char ** argv)
+{
+    GLControl *control= new GLControl();
+    
+    return control->run();
 }
 
